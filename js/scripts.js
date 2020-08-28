@@ -44,12 +44,14 @@ let overallPizzaOrder =  new OverallPizzaOrder();
 $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
-    const inputtedSize = parseInt($("input#pizzaSize").val());
-    const inputtedMeat = ($("input#pizzaTopping1").val());
-    const inputtedVeggie = ($("input#pizzaTopping2").val());
-    let newPizza = new Pizza(inputtedSize, inputtedMeat, inputtedVeggie);
+    const size = parseInt($("#pizzaSize").val());
+    const meat = parseInt($("#pizzaTopping1").val());
+    const veggie = parseInt($("#pizzaTopping2").val());
+    console.log(size, meat, veggie)
+    
+    //let newPizza = new Pizza(inputtedSize, inputtedMeat, inputtedVeggie);
    // overallPizzaOrder.addPizza(newPizza);
-    console.log(newPizza)
+    //console.log(newPizza)
   });
 });
 
