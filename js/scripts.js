@@ -1,29 +1,6 @@
 //Business Logic Overal Pizza Order
   function OverallPizzaOrder() {
     this.pizzas = [];
-  //  this.currentId = 0;
-  }
-
-  //OverallPizzaOrder.prototype.addPizza = function(pizza) {
-   // pizza.id = this.assignId();
-   // this.pizzas.push(pizza);
-  //}
-/*
-  OverallPizzaOrder.prototype.assignId = function() {
-    this.currentId +=1;
-    return this.currentId;
-  }
-
-  OverallPizzaOrder.prototype.findPizza = function(id) {
-    for (let i=0; i< this.pizzas.length; i++) {
-        if (this.pizzas[i].id == id) {
-          return this.pizzas[i];
-        }
-      };
-    return false
-  }*/
-  Pizza.prototype.findPrice = function() {
-    l
   }
 
 //Business Logic for Pizza
@@ -58,7 +35,6 @@ $(document).ready(function() {
 
 
 
-/* 
 let OverallPizzaOrder = new OverallPizzaOrder();
 let pizza = new Pizza("Small", "Ham", "Olives");
 OverallPizzaOrder.addPizza(pizza);
@@ -74,17 +50,3 @@ OverallPizzaOrder.addPizza(pizza);
     if (this.size === "Large")
       return $20
   }
-
-
-
-
-//UI Logic
-
-
-function displayPizza(pizzaId) {
-  const contact = OverallPizzaOrder.findPrice(pizza.id);
-  $("#show-price").show();
-  $(".final-price").html(newPizza)
-}
-
-*/
