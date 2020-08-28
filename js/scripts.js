@@ -10,10 +10,9 @@ function Pizza(size, meat, veggie) {
 }
 
 Pizza.prototype.findPrice = function() {
-  let value = (this.size, this.meat, this.veggie)
   if (this.size === "Small")
     return $10
-  if (value === "Medium")
+  if (this.size === "Medium")
     return $15
   if (this.size === "Large")
     return $20
@@ -36,6 +35,6 @@ $(document).ready(function() {
     console.log(size, meat, veggie);
 
 
-    let pizzaOrder = new Pizza(size, meat, veggie);
+    let finalPizzaOrder = new Pizza(size, meat, veggie);
   });
 })
