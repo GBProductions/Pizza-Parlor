@@ -1,14 +1,14 @@
 //Business Logic Overal Pizza Order
   function OverallPizzaOrder() {
     this.pizzas = [];
-    this.currentId = 0;
+  //  this.currentId = 0;
   }
 
-  OverallPizzaOrder.prototype.addPizza = function(pizza) {
-    pizza.id = this.assignId();
-    this.pizzas.push(pizza);
-  }
-
+  //OverallPizzaOrder.prototype.addPizza = function(pizza) {
+   // pizza.id = this.assignId();
+   // this.pizzas.push(pizza);
+  //}
+/*
   OverallPizzaOrder.prototype.assignId = function() {
     this.currentId +=1;
     return this.currentId;
@@ -21,6 +21,9 @@
         }
       };
     return false
+  }*/
+  Pizza.prototype.findPrice = function() {
+    l
   }
 
 //Business Logic for Pizza
@@ -41,12 +44,12 @@ let overallPizzaOrder =  new OverallPizzaOrder();
 $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
-    const inputtedSize = ($("input:radio[name=pizzaSize]:checked").val());
-    const inputtedMeat = ($("input:radio[name=pizzaTopping1]:checked").val());
-    const inputtedVeggie = ($("input:radio[name=pizzaTopping2]:checked").val());
+    const inputtedSize = parseInt($("input#pizzaSize").val());
+    const inputtedMeat = ($("input#pizzaTopping1").val());
+    const inputtedVeggie = ($("input#pizzaTopping2").val());
     let newPizza = new Pizza(inputtedSize, inputtedMeat, inputtedVeggie);
-    overallPizzaOrder.addPizza(newPizza);
-    console.log(overallPizzaOrder.pizzas)
+   // overallPizzaOrder.addPizza(newPizza);
+    console.log(newPizza)
   });
 });
 
@@ -59,14 +62,6 @@ let pizza = new Pizza("Small", "Ham", "Olives");
 OverallPizzaOrder.addPizza(pizza);
 
 
-  OverallPizzaOrder.prototype.addPizza = function() {
-    pizza.id = this.assignId();
-    this.pizzas.push(pizza);
-  }
-
-  OverallPizzaOrder.prototype.assignId = function() {
-    this.currentId += 1;
-    return this.currentId;
   }
 
   OverallPizzaOrder.prototype.findPrice = function(id) {
