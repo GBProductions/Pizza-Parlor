@@ -1,3 +1,7 @@
 .jumbotron {
   background-color: lightcoral;
 }
+
+#show-price {
+  display: none;
+}
