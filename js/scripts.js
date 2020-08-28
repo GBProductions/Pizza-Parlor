@@ -40,7 +40,6 @@ let pizza = new Pizza("Small", "Ham", "Olives");
 OverallPizzaOrder.addPizza(pizza);
 
 
-  }
 
   OverallPizzaOrder.prototype.findPrice = function(id) {
     if (this.size === "Small")
