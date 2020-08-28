@@ -48,7 +48,7 @@ $(document).ready(function() {
     overallPizzaOrder.addPizza(newPizza);
     console.log(overallPizzaOrder.pizzas)
   });
-})
+});
 
 
 
