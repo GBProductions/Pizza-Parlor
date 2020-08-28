@@ -1,7 +1,6 @@
 //Business Pizza Order Logic
   function OverallPizzaOrder() {
     this.pizza = []
-    this.currentId = 0
   }
 
   OverallPizzaOrder.prototype.addPizza = function() {
@@ -14,7 +13,7 @@
     return this.currentId;
   }
 
-  OverallPizzaOrder.prototype.findPrice = function() {
+  OverallPizzaOrder.prototype.findPrice = function(id) {
     if (this.size === "Small")
       return $10
     if (this.size === "Medium")
@@ -31,10 +30,9 @@ function Pizza(size, meat, veggie) {
   this.veggie = veggie
 }
 
-this.pizzaOrder = function() {
+Pizza.prototype.fullOrder = function() {
   return "A " + this.size + " pizza with " + this.meat + " and " + this.veggie;
-} 
-
+}
 
 
 
