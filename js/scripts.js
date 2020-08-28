@@ -1,10 +1,10 @@
 //Business Pizza Order Logic
   function OverallPizzaOrder() {
-    this.pizzas = []
+    this.pizza = []
     this.currentId = 0
   }
 
-  OverallPizzaOrder.prototype.addPizza = function(pizza) {
+  OverallPizzaOrder.prototype.addPizza = function() {
     pizza.id = this.assignId();
     this.pizzas.push(pizza);
   }
@@ -24,6 +24,7 @@
   }
 
 //Business Logic for Pizza
+this.pizza = Pizza 
 function Pizza(size, meat, veggie) {
   this.size = size,
   this.meat = meat,
@@ -41,9 +42,9 @@ this.pizzaOrder = function() {
 
 
 function displayPizza(pizzaId) {
-  const contact = OverallPizzaOrder.findPrice(contactId);
+  const contact = OverallPizzaOrder.findPrice(pizza.id);
   $("#show-price").show();
-
+  $(".final-price").html(newPizza)
 }
 
 
@@ -58,6 +59,6 @@ $(document).ready(function() {
 
     let newPizza = new Pizza(size, meat, veggie);
 
-    OverallPizzaOrder.addPizza(newPizza)
+    //OverallPizzaOrder.addPizza(newPizza)
   });
 })
