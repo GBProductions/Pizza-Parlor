@@ -19,8 +19,12 @@ console.log(pizza1);
 //UI Logic
 
 
-/*$(document).ready(function()) {
+$(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
-    const size = 
-}*/
+    const size = ($("input:radio[name=pizzaSize]:checked").val());
+    const meat = ($("input:radio[name=pizzaTopping1]:checked").val());
+    const veggie = ($("input:radio[name=pizzaTopping2]:checked").val());
+    console.log(size, meat, veggie);
+  });
+});
