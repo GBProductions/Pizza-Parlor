@@ -1,29 +1,50 @@
+//Business Pizza Order Logic
+  function OverallPizzaOrder() {
+    this.pizzas = []
+    this.currentId = 0
+  }
+
+  OverallPizzaOrder.prototype.addPizza = function(pizza) {
+    pizza.id = this.assignId();
+    this.pizzas.push(pizza);
+  }
+
+  OverallPizzaOrder.prototype.assignId = function() {
+    this.currentId += 1;
+    return this.currentId;
+  }
+
+  OverallPizzaOrder.prototype.findPrice = function() {
+    if (this.size === "Small")
+      return $10
+    if (this.size === "Medium")
+      return $15
+    if (this.size === "Large")
+      return $20
+  }
+
 //Business Logic for Pizza
-function Pizza() {
-  this.orders = [],
-  this.currentId = 0
-}
 function Pizza(size, meat, veggie) {
   this.size = size,
   this.meat = meat,
   this.veggie = veggie
 }
 
-Pizza.prototype.findPrice = function() {
-  if (this.size === "Small")
-    return $10
-  if (this.size === "Medium")
-    return $15
-  if (this.size === "Large")
-    return $20
-}
+this.pizzaOrder = function() {
+  return "A " + this.size + " pizza with " + this.meat + " and " + this.veggie;
+} 
 
-  this.pizzaOrder = function() {
-    return "A " + this.size + " pizza with " + this.meat + " and " + this.veggie;
-  } 
+
 
 
 //UI Logic
+
+
+function displayPizza(pizzaId) {
+  const contact = OverallPizzaOrder.findPrice(contactId);
+  $("#show-price").show();
+
+}
 
 
 $(document).ready(function() {
@@ -35,6 +56,8 @@ $(document).ready(function() {
     console.log(size, meat, veggie);
 
 
-    let finalPizzaOrder = new Pizza(size, meat, veggie);
+    let newPizza = new Pizza(size, meat, veggie);
+
+    OverallPizzaOrder.addPizza(newPizza)
   });
 })
