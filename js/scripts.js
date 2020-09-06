@@ -48,3 +48,26 @@ OverallPizzaOrder.addPizza(pizza);
       return $20
   }
 });
+
+
+/*Pricing logic
+
+High Price - $20 =>7
+Medium Price- $15 =>4
+Low price- $10 =>1
+
+Small-1
+Medium-2
+Large-4
+
+None - 0
+Pepperoni-1
+Ham-2
+Bacon-3
+
+None - 0
+Pineapple-1
+Mushrooms-2
+Olives-3
+
+*/
