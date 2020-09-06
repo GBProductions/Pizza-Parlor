@@ -16,6 +16,7 @@
       <div class="form-group">
         <label for="pizzaSize">Pick your pizza size!</label>
         <select id="pizzaSize" class="form-control">
+          <option></option>
           <option value="1">Small</option>
           <option value="2">Medium</option>
           <option value="3">Large</option>
@@ -23,6 +24,7 @@
       <br>
         <label for="pizzaTopping1">Pick your first topping!</label>
         <select id="pizzaTopping1" class="form-control">
+          <option></option>
           <option value="1">Pepperoni</option>
           <option value="2">Ham</option>
           <option value="3">Bacon</option>
@@ -31,6 +33,7 @@
       <br>
         <label for="pizzaTopping2">Pick your first topping!</label>
         <select id="pizzaTopping2" class="form-control">
+          <option></option>
           <option value="1">Pineapple</option>
           <option value="2">Mushrooms</option>
           <option value="3">Olives</option>
@@ -39,7 +42,7 @@
       </div>
       <br>
       <button id="submitPizza" type="submit">Submit Order</button>
-      <button id="resetPizza" type="reset">Reset</button>
+      <button onClick="window.location.reload();">Reset</button>
       <br>
     </form>
     <br>
