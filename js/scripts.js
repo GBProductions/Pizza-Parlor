@@ -3,7 +3,6 @@
     this.pizzas = [];
   }
 
-//Business Logic for Pizza
 function Pizza(size, meat, veggie) {
   this.size = size;
   this.meat = meat;
@@ -26,17 +25,16 @@ $(document).ready(function() {
     const veggie = parseInt($("#pizzaTopping2").val());
     console.log(size, meat, veggie)
     
-    //let newPizza = new Pizza(inputtedSize, inputtedMeat, inputtedVeggie);
-   // overallPizzaOrder.addPizza(newPizza);
-    //console.log(newPizza)
-  });
-});
+    let newPizza = new Pizza(inputtedSize, inputtedMeat, inputtedVeggie);
+    overallPizzaOrder.addPizza(newPizza);
+
+})
 
 
 
 
-let OverallPizzaOrder = new OverallPizzaOrder();
-let pizza = new Pizza("Small", "Ham", "Olives");
+
+let pizza = new Pizza("Small", "Ham", "Olives"); 
 OverallPizzaOrder.addPizza(pizza);
 
 
@@ -49,3 +47,4 @@ OverallPizzaOrder.addPizza(pizza);
     if (this.size === "Large")
       return $20
   }
+});
