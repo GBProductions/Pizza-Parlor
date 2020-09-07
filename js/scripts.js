@@ -68,23 +68,17 @@ Spec 7: When user selects a Small, None, and None pizza, the cost will be $10.
 Input: (Size: Small, First: None, Second: None) 
 Output: $10
 
-Spec 8: 
+Spec 8: When user selects a Medium, None, and None pizza, the cost will be $10.
+Input: (Size: Medium, First: None, Second: None) 
+Output: $10
+
+Spec 9: When user selects a Small, None, and None pizza, the cost will be $10.
 Input:
 Output:
 
-Spec 9:
+Spec 10: When user selects a Small, None, and None pizza, the cost will be $10.
 Input:
 Output:
-
-Spec 10:
-Input:
-Output:
-
-Spec 11:
-Input:
-Output:
-
-
 
 ---------------------TEST---------------------
 
@@ -114,6 +108,10 @@ Output: $20
 
 Test 7: When user selects a Small, None, and None pizza, the cost will be $10.
 Input: (Size: Small, First: None, Second: None) 
+Output: $10
+
+Test 8: When user selects a Medium, None, and None pizza, the cost will be $10.
+Input: (Size: Medium, First: None, Second: None) 
 Output: $10
 */
 
