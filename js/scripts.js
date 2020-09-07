@@ -28,11 +28,11 @@ function Pizza(newPizza) {
 
 function find() {
   if (this.newPizza >= "1"){
-      return "$10" 
+      return newPizza = ("$10") 
     } else if (this.newPizza >= "4"){
-      return "$15"
+      return newPizza = ("$15")
     } else if (this.newPizza >= "7"){ 
-      return "$20"
+      return newPizza = ("$20")
     }  
   };
 /*
@@ -54,27 +54,17 @@ $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
 
-
+    
     let inputtedSize = parseInt($("#pizzaSize").val());
     let inputtedMeat = parseInt($("#pizzaTopping1").val());
     let inputtedVeggie = parseInt($("#pizzaTopping2").val());
     
-    
+    debugger
     let newPizza = new Pizza(inputtedSize + inputtedMeat + inputtedVeggie);
     
     (find(Pizza(newPizza)));
 
     console.log(newPizza);
 
-    
-    
-    //overallPizzaOrder.addPizza(newPizza);
-
+  });
 });
-});
-
-
-
-/*let pizza = new Pizza("Small", "Ham", "Olives"); 
-OverallPizzaOrder.addPizza(pizza);
-*/
