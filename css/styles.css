@@ -5,3 +5,7 @@
 .show-price {
   display: none;
 }
+
+body {
+  background-color: lightyellow;
+}
