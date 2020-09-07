@@ -26,14 +26,15 @@ function Pizza(newPizza) {
   this.newPizza = newPizza
 }
 
-  OverallPizzaOrder.prototype.findPrice = function(id) {
-    if (this.size === "Small")
-      return $10
-    if (this.size === "Medium")
+function find() {
+  if (this.newPizza >= "1"){
+      return $10 
+    } else if (this.newPizza >= "4"){
       return $15
-    if (this.size === "Large")
+    } else if (this.newPizza >= "7"){ 
       return $20
-    });
+    }  
+  };
 /*
   function OverallPizzaOrder() {
     this.pizzas = [];
@@ -60,22 +61,20 @@ $(document).ready(function() {
     
     
     let newPizza = new Pizza(inputtedSize + inputtedMeat + inputtedVeggie);
+    
+    (find(Pizza(newPizza)));
+
     console.log(newPizza);
+
     
     
     //overallPizzaOrder.addPizza(newPizza);
 
-})
-
-
+});
+});
 
 
 
 /*let pizza = new Pizza("Small", "Ham", "Olives"); 
 OverallPizzaOrder.addPizza(pizza);
-
-
-
-
-
-
+*/
