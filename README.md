@@ -58,11 +58,11 @@ Spec 2: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
 
-Spec 3: If the Total Value for a pizza order is more than or equal to 7, the returned price will be $20.
+Spec 3: If the Total Value for a pizza order is more than or equal to 7, the returned price will be $20. This Spec takes prescedent over Spec 4 and Spec 5.
 Input: (Ex: Size: Large, First: Bacon, Second: Olives)
 Output: $20
 
-Spec 4: If the Total Value for a pizza order is more than or equal to 4, the returned price will be $15.
+Spec 4: If the Total Value for a pizza order is more than or equal to 4, the returned price will be $15. This Spec takes prescedent over Spec 5.
 Input: (Ex: Size: Medium, First: Pepperoni, Second: Pineapple) 
 Output: $15
 
