@@ -40,47 +40,47 @@ The Final Price is presented to the user.
 
 ---------------------SPECS---------------------
 
-Spec: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Spec 1: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
 Input:(Size: Small, First: --Select--, Second: Pineapple)
 Output:No price returned
 
-Spec: Hitting Reset button will clear drop down menus and clear price output.
+Spec 2: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
 
-Spec: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Spec 3: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output: $10
 
-Spec: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Spec 4: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
 Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
 Output: $15
 
-Spec:
-Input: (Size: Large, First: Pepperoni, Second: Pineapple) 
-Output:
+Spec 5: When user selects a Large, Ham, and Mushroom pizza, the cost will be $20.
+Input: (Size: Large, First: Ham, Second: Mushrooms) 
+Output: $20
 
-Spec:
+Spec 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20.
+Input: (Size: Large, First: Bacon, Second: Olives) 
+Output: $20
+
+Spec 7:
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output:
 
-Spec:
-Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
-Output:
-
-Spec:
+Spec 8:
 Input:
 Output:
 
-Spec:
+Spec 9:
 Input:
 Output:
 
-Spec:
+Spec 10:
 Input:
 Output:
 
-Spec:
+Spec 11:
 Input:
 Output:
 
@@ -88,22 +88,29 @@ Output:
 
 ---------------------TEST---------------------
 
-Test: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Test 1: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
 Input:(Size: Small, First: --Select--, Second: Pineapple)
 Output:No price returned
 
-Test: Hitting Reset button will clear drop down menus and clear price output.
+Test 2: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
 
-Test: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Test 3: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output: $10
 
-Test: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Test 4: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
 Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
 Output: $15
 
+Test 5: When user selects a Large, Ham, Mushrooms pizza, the cost will be $20.
+Input: (Size: Large, First: Ham, Second: Mushrooms) 
+Output: $20
+
+Test 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20.
+Input: (Size: Large, First: Bacon, Second: Olives) 
+Output: $20
 */
 
 
