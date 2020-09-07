@@ -1,3 +1,17 @@
+
+
+
+//Business Logic-----------
+function Pizza (size, meat, veggie) {
+  this.size = size;
+  this.meat = meat;
+  this.veggie = veggie;
+};
+
+Pizza.prototype.fullOrder = function() {
+  return "Your pizza is ready!"; 
+};
+
 function addPizza(inputtedSize, inputtedMeat, inputtedVeggie) {
   return (inputtedSize + inputtedMeat + inputtedVeggie)
 }
@@ -13,18 +27,6 @@ function addValues(newPizza) {
   };
 
 
-
-//Business Logic-----------
-function Pizza (size, meat, veggie) {
-  this.size = size;
-  this.meat = meat;
-  this.veggie = veggie;
-}
-
-Pizza.prototype.fullOrder = function() {
-  return "Your pizza is a " + this.size + " with " + this.meat + " and " + this.veggie "."; 
-}
-
 //User Interface Logic------------
 
 $(document).ready(function() {
@@ -36,13 +38,15 @@ $(document).ready(function() {
     let inputtedMeat = parseInt($("#pizzaTopping1").val());
     let inputtedVeggie = parseInt($("#pizzaTopping2").val());
 
+    let testPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie);
     let newPizza = addPizza(inputtedSize, inputtedMeat, inputtedVeggie); 
     
-    (addValues(newPizza))
+    (addValues(newPizza));
+    
+    testPizza.fullOrder();
 
     
     
     
-
   })
 });
