@@ -48,9 +48,9 @@ Spec: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
 
-Spec: 
-Input:
-Output:
+Spec: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
+Output: $10
 
 Spec:
 Input:
@@ -95,6 +95,10 @@ Output:No price returned
 Test: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
+
+Test: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
+Output: $10
 
 
 */
