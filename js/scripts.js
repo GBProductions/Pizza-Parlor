@@ -1,4 +1,3 @@
-//Business Logic-----------
 function addPizza(inputtedSize, inputtedMeat, inputtedVeggie) {
   return (inputtedSize + inputtedMeat + inputtedVeggie)
 }
@@ -12,6 +11,19 @@ function addValues(newPizza) {
       $('#ten-dollars').show()
     }
   };
+
+
+
+//Business Logic-----------
+function Pizza (size, meat, veggie) {
+  this.size = size;
+  this.meat = meat;
+  this.veggie = veggie;
+}
+
+Pizza.prototype.fullOrder = function() {
+  return "Your pizza is a " + this.size + " with " + this.meat + " and " + this.veggie "."; 
+}
 
 //User Interface Logic------------
 
