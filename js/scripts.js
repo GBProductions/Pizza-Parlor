@@ -52,20 +52,20 @@ Spec: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $1
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output: $10
 
+Spec: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
+Output: $15
+
 Spec:
-Input:
+Input: (Size: Large, First: Pepperoni, Second: Pineapple) 
 Output:
 
 Spec:
-Input:
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output:
 
 Spec:
-Input:
-Output:
-
-Spec:
-Input:
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output:
 
 Spec:
@@ -100,6 +100,9 @@ Test: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $1
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
 Output: $10
 
+Test: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
+Output: $15
 
 */
 
