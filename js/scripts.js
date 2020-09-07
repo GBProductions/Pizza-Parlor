@@ -28,11 +28,11 @@ function Pizza(newPizza) {
 
 function find() {
   if (this.newPizza >= "1"){
-      return $10 
+      return "$10" 
     } else if (this.newPizza >= "4"){
-      return $15
+      return "$15"
     } else if (this.newPizza >= "7"){ 
-      return $20
+      return "$20"
     }  
   };
 /*
