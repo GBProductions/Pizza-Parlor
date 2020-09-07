@@ -18,7 +18,13 @@ Pineapple-1
 Mushrooms-2
 Olives-3
 
+
+Pizza.prototype.fullOrder = function() {
+  return ("A " + this.size + " pizza with " + this.meat + " and " + this.veggie);
+}
 */
+
+
 
 
 //Business Logic Overal Pizza Order
@@ -28,27 +34,17 @@ function Pizza(newPizza) {
 
 function find() {
   if (this.newPizza >= 1) {
-      return newPizza = ("$10") 
-    } else if (this.newPizza >= 4) {
-      return newPizza = ("$15")
-    } else if (this.newPizza >= 7) { 
-      return newPizza = ("$20")
+      pizzaPrice = ("$10") 
+    } 
+  if (this.newPizza >= 4) {
+      pizzaPrice = ("$15")
+    } 
+  if(this.newPizza >= 7) { 
+      return pizzaPrice = ("$20")
     }  
-  };
-/*
-  function OverallPizzaOrder() {
-    this.pizzas = [];
-  }
+};
 
-
-
-Pizza.prototype.fullOrder = function() {
-  return ("A " + this.size + " pizza with " + this.meat + " and " + this.veggie);
-}
-
-*/
 //User Interface Logic------------
-//let overallPizzaOrder =  new OverallPizzaOrder();
 
 $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
@@ -64,7 +60,7 @@ $(document).ready(function() {
     
     (find(Pizza(newPizza)));
 
-    console.log(newPizza);
+    console.log(pizza);
 
   });
 });
