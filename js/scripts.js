@@ -1,9 +1,9 @@
 /*
 ---------------------SPECS---------------------
 
-Spec:
-Input:
-Output:
+Spec: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Input:(Size: Small, First: --Select--, Second: Pineapple)
+Output:No price returned
 
 Spec:
 Input:
@@ -49,53 +49,9 @@ Output:
 
 ---------------------TEST---------------------
 
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
-
-Test:
-Input:
-Output:
+Test: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Input:(Size: Small, First: --Select--, Second: Pineapple)
+Output:No price returned
 
 
 */
