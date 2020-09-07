@@ -9,7 +9,7 @@ function Pizza (size, meat, veggie) {
 };
 
 Pizza.prototype.fullOrder = function() {
-  return "Your pizza is ready!"; 
+  return "Your pizza is ready!"
 };
 
 function addPizza(inputtedSize, inputtedMeat, inputtedVeggie) {
@@ -40,11 +40,9 @@ $(document).ready(function() {
 
     let testPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie);
     let newPizza = addPizza(inputtedSize, inputtedMeat, inputtedVeggie); 
-    
+  
+    (testPizza.fullOrder());
     (addValues(newPizza));
-    
-    testPizza.fullOrder();
-
     
     
     
