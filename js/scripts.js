@@ -34,15 +34,22 @@ function Pizza(newPizza) {
 
 function find() {
   if (this.newPizza >= 1) {
-      pizzaPrice = ("$10") 
+    $('#ten-dollars').show(); 
+    } else {
+    $('#javascript').hide();
     } 
   if (this.newPizza >= 4) {
-      pizzaPrice = ("$15")
-    } 
+    $('#fifteen-dollars').show()
+    } else {
+      $('#javascript').hide();
+    }   
   if(this.newPizza >= 7) { 
-      return pizzaPrice = ("$20")
+    $('#twenty-dollars').show();
+    } else {
+    $('#javascript').hide();
     }  
 };
+
 
 //User Interface Logic------------
 
@@ -58,9 +65,9 @@ $(document).ready(function() {
     debugger
     let newPizza = new Pizza(inputtedSize + inputtedMeat + inputtedVeggie);
     
-    (find(Pizza(newPizza)));
+    (find(newPizza));
 
-    console.log(pizza);
+    console.log(pizzaPrice);
 
   });
 });
