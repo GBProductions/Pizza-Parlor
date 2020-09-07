@@ -33,20 +33,20 @@ function Pizza(newPizza) {
 }
 
 function find() {
-  if (this.newPizza >= 1) {
+  if (newPizza >= 1) {
     $('#ten-dollars').show(); 
     } else {
-    $('#javascript').hide();
+    $('#ten-dollars').hide();
     } 
-  if (this.newPizza >= 4) {
+  if (Pizza >= 4) {
     $('#fifteen-dollars').show()
     } else {
-      $('#javascript').hide();
+      $('#fifteen-dollars').hide();
     }   
-  if(this.newPizza >= 7) { 
+  if(Pizza >= 7) { 
     $('#twenty-dollars').show();
     } else {
-    $('#javascript').hide();
+    $('#twenty-dollars').hide();
     }  
 };
 
@@ -65,9 +65,9 @@ $(document).ready(function() {
     debugger
     let newPizza = new Pizza(inputtedSize + inputtedMeat + inputtedVeggie);
     
-    (find(newPizza));
+    (find(Pizza(newPizza)));
+  
 
-    console.log(pizzaPrice);
 
   });
 });
