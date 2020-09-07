@@ -1,12 +1,137 @@
 # _Pizza Parlor_
 
-#### _Pizza Pie, selector and cost calculator. August 28th 2020_
+#### _Pizza Pie, selector and cost calculator. September 7th 2020_
 
 #### By _**Garrett Brown**_
 
 ## Description
 
 _It's Pizza Time! Select your favorite toppings for pizza, and the program will tell you how much your pizza costs._
+
+
+---------------------Information---------------------
+
+Price is determined by assigning values to the following options:
+
+Pizza Size Values (choose one)
+  Small - "1"
+  Medium - "2"
+  Large - "3"
+
+First Topping Values (choose one)
+  Pepperoni - "1"
+  Ham - "2"
+  Bacon - "3"
+  None - "0"
+
+Second Topping Values (choose one)
+  Pineapple - "1"
+  Mushrooms - "2"
+  Olives - "3"
+  None - "0"
+
+These values are then added up for a Total Value.
+
+Ex: (Size Value + First Topping Value + Second Topping Value) = Total Value
+
+The price is determined by figuring out where the total is inputted:
+
+1. If Total Value => 7
+    return price of $20
+  
+2. If Total Value => 4
+    return price of $15
+
+3. If Total Value => 1
+  return price of $10
+
+
+The Final Price is presented to the user.
+
+---------------------SPECS---------------------
+
+Spec 1: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Input:(Size: Small, First: --Select--, Second: Pineapple)
+Output:No price returned
+
+Spec 2: Hitting Reset button will clear drop down menus and clear price output.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
+Output: $10 (Cleared after Reset)
+
+Spec 3: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
+Output: $10
+
+Spec 4: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
+Output: $15
+
+Spec 5: When user selects a Large, Ham, and Mushroom pizza, the cost will be $20.
+Input: (Size: Large, First: Ham, Second: Mushrooms) 
+Output: $20
+
+Spec 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20.
+Input: (Size: Large, First: Bacon, Second: Olives) 
+Output: $20
+
+Spec 7: When user selects a Small, None, and None pizza, the cost will be $10.
+Input: (Size: Small, First: None, Second: None) 
+Output: $10
+
+Spec 8: When user selects a Medium, None, and None pizza, the cost will be $10.
+Input: (Size: Medium, First: None, Second: None) 
+Output: $10
+
+Spec 9: When user selects a Large, None, and None pizza, the cost will be $10.
+Input: (Size: Large, First: None, Second: None) 
+Output: $10
+
+Spec 10: When user selects a Medium, None, and Olives pizza, the cost will be $15.
+Input:  (Size: Medium, First: None, Second: Olives) 
+Output: $15
+
+---------------------TEST---------------------
+
+Test 1: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
+Input:(Size: Small, First: --Select--, Second: Pineapple)
+Output:No price returned
+
+Test 2: Hitting Reset button will clear drop down menus and clear price output.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
+Output: $10 (Cleared after Reset)
+
+Test 3: When user selects a Small, Pepperoni, Pineapple pizza, the cost will be $10.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
+Output: $10
+
+Test 4: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be $15.
+Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
+Output: $15
+
+Test 5: When user selects a Large, Ham, and Mushroom pizza, the cost will be $20.
+Input: (Size: Large, First: Ham, Second: Mushrooms) 
+Output: $20
+
+Test 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20.
+Input: (Size: Large, First: Bacon, Second: Olives) 
+Output: $20
+
+Test 7: When user selects a Small, None, and None pizza, the cost will be $10.
+Input: (Size: Small, First: None, Second: None) 
+Output: $10
+
+Test 8: When user selects a Medium, None, and None pizza, the cost will be $10.
+Input: (Size: Medium, First: None, Second: None) 
+Output: $10
+
+Test 9: When user selects a Large, None, and None pizza, the cost will be $10.
+Input: (Size: Large, First: None, Second: None) 
+Output: $10
+
+Test 10: When user selects a Medium, None, and Olives pizza, the cost will be $15.
+Input:  (Size: Medium, First: None, Second: Olives) 
+Output: $15
+
 
 ## Setup/Installation Requirements
 
