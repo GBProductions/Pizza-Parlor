@@ -5,9 +5,9 @@ Spec: When user does not select an option on all three menu boxes (Size, First T
 Input:(Size: Small, First: --Select--, Second: Pineapple)
 Output:No price returned
 
-Spec:
-Input:
-Output:
+Spec: Hitting Reset button will clear drop down menus and clear price output.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
+Output: $10 (Cleared after Reset)
 
 Spec:
 Input:
@@ -52,6 +52,10 @@ Output:
 Test: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
 Input:(Size: Small, First: --Select--, Second: Pineapple)
 Output:No price returned
+
+Test: Hitting Reset button will clear drop down menus and clear price output.
+Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
+Output: $10 (Cleared after Reset)
 
 
 */
