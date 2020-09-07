@@ -64,11 +64,11 @@ Spec 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20
 Input: (Size: Large, First: Bacon, Second: Olives) 
 Output: $20
 
-Spec 7:
-Input: (Size: Small, First: Pepperoni, Second: Pineapple) 
-Output:
+Spec 7: When user selects a Small, None, and None pizza, the cost will be $10.
+Input: (Size: Small, First: None, Second: None) 
+Output: $10
 
-Spec 8:
+Spec 8: 
 Input:
 Output:
 
@@ -104,13 +104,17 @@ Test 4: When user selects a Medium, Pepperoni, Pineapple pizza, the cost will be
 Input: (Size: Medium, First: Pepperoni, Second: Pineapple) 
 Output: $15
 
-Test 5: When user selects a Large, Ham, Mushrooms pizza, the cost will be $20.
+Test 5: When user selects a Large, Ham, and Mushroom pizza, the cost will be $20.
 Input: (Size: Large, First: Ham, Second: Mushrooms) 
 Output: $20
 
 Test 6: When user selects a Large, Bacon, and Olives pizza, the cost will be $20.
 Input: (Size: Large, First: Bacon, Second: Olives) 
 Output: $20
+
+Test 7: When user selects a Small, None, and None pizza, the cost will be $10.
+Input: (Size: Small, First: None, Second: None) 
+Output: $10
 */
 
 
