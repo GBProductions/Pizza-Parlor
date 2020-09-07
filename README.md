@@ -133,6 +133,7 @@ _If you need support, contact Garrett Brown at <garrettpaulbrown@gmail.com>_
 ## Technologies Used
 
 _Used HTML, CSS, JavaScript, Bootstrap, JQuery._
+_Used VS Code, Google Chrome/Dev Tools for testing._
 
 ### License
 
