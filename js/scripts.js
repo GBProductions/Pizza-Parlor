@@ -1,4 +1,43 @@
 /*
+---------------------Information---------------------
+
+Price is determined by assigning values to the following options:
+
+Pizza Size Values (choose one)
+  Small - "1"
+  Medium - "2"
+  Large - "3"
+
+First Topping Values (choose one)
+  Pepperoni - "1"
+  Ham - "2"
+  Bacon - "3"
+  None - "0"
+
+Second Topping Values (choose one)
+  Pineapple - "1"
+  Mushrooms - "2"
+  Olives - "3"
+  None - "0"
+
+These values are then added up for a Total Value.
+
+Ex: (Size Value + First Topping Value + Second Topping Value) = Total Value
+
+The price is determined by figuring out where the total is inputted:
+
+1. If Total Value => 7
+    return price of $20
+  
+2. If Total Value => 4
+    return price of $15
+
+3. If Total Value => 1
+  return price of $10
+
+
+The Final Price is presented to the user.
+
 ---------------------SPECS---------------------
 
 Spec: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
@@ -9,7 +48,7 @@ Spec: Hitting Reset button will clear drop down menus and clear price output.
 Input: (Size: Small, First: Pepperoni, Second: Pineapple) Reset
 Output: $10 (Cleared after Reset)
 
-Spec:
+Spec: 
 Input:
 Output:
 
