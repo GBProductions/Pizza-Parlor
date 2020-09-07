@@ -9,12 +9,8 @@ function Pizza (size, meat, veggie) {
 };
 
 Pizza.prototype.fullOrder = function() {
-  return "Your pizza is ready!"
+  return this.size + this.meat + this.veggie 
 };
-
-function addPizza(inputtedSize, inputtedMeat, inputtedVeggie) {
-  return (inputtedSize + inputtedMeat + inputtedVeggie)
-}
 
 function addValues(newPizza) {
     if (newPizza >= 7) {
@@ -39,12 +35,8 @@ $(document).ready(function() {
     let inputtedVeggie = parseInt($("#pizzaTopping2").val());
 
     let testPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie);
-    let newPizza = addPizza(inputtedSize, inputtedMeat, inputtedVeggie); 
   
-    (testPizza.fullOrder());
+    let newPizza = (testPizza.fullOrder());
     (addValues(newPizza));
-    
-    
-    
   })
 });
