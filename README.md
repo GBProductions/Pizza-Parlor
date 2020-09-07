@@ -116,6 +116,7 @@ Output: $15
 
 ## Setup/Installation Requirements
 
+* _Make sure you have the latest version of your favorite browser._
 * _Clone the "Pizza-Parlor" repository from Github._
 * _Navigate to the root directory of the project in the terminal and type 'open index.html' to view project in a browser._
 * _Open the project in text editor to view code._
