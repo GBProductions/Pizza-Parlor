@@ -141,6 +141,6 @@ $(document).ready(function() {
     let testPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie);
   
     let newPizza = testPizza.fullOrder();
-    (addValues(newPizza));
+    addValues(newPizza);
   })
 });
