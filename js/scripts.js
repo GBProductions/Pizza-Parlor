@@ -103,7 +103,7 @@ Test 10: When user selects a Medium, None, and Olives pizza, the cost will be $1
 Input:  (Size: Medium, First: None, Second: Olives) 
 Output: $15
 */
-
+//////////////////////////////////////////////////////////////////////////////////REMOVE EVERYTHING ABOVE
 
 //Business Logic-----------
 function Pizza (size, meat, veggie) {
@@ -140,7 +140,7 @@ $(document).ready(function() {
 
     let testPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie);
   
-    let newPizza = (testPizza.fullOrder());
+    let newPizza = testPizza.fullOrder();
     (addValues(newPizza));
   })
 });
