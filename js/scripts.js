@@ -1,6 +1,6 @@
 //Business Logic-----------
-function totalPrice(inputtedSize, inputtedMeat, inputtedVeggie) {
-  totalPrice = (inputtedSize + inputtedMeat + inputtedVeggie)
+function pizzaPrice(numberSize, numberMeat, numberVeggie) {
+  totalPrice = (numberSize, numberMeat, numberVeggie)
 }
 
 function Pizza (size, meat, veggie, totalPrice) {
@@ -38,38 +38,19 @@ $(document).ready(function() {
     let strb= ($("#pizzaTopping1").val());
     let strc = ($("#pizzaTopping2").val());
 
-    let str1 = (stra.slice(-1)),
-        str2 = (stra.slice(0, -1)),
-        str3 = (strb.slice(-1)),
-        str4 = (strb.slice(0, -1)),
-        str5 = (strc.slice(-1)),
-        str6 = (strc.slice(0, -1));
-
-      console.log(str1);
-      console.log(str2);
-      console.log(str3);
-      console.log(str4);
-      console.log(str5);
-      console.log(str6);
+    let numberSize = parseInt(stra.slice(-1)),
+        inputtedSize = (stra.slice(0, -1)),
+        numberMeat = parseInt(strb.slice(-1)),
+        inputtedMeat = (strb.slice(0, -1)),
+        numberVeggie = parseInt(strc.slice(-1)),
+        inputtedVeggie = (strc.slice(0, -1));
 
 
-    
-    
-    
-    
-    
-    
 
-
-    
-    let inputtedSize = parseInt($("#pizzaSize").val());
-    let inputtedMeat = parseInt($("#pizzaTopping1").val());
-    let inputtedVeggie = parseInt($("#pizzaTopping2").val());
-
-    totalPrice(inputtedSize, inputtedMeat, inputtedVeggie);
+    pizzaPrice(numberSize, numberMeat, numberVeggie);
     newPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie, totalPrice);
 
-    returnPrice
+    console.log(newPizza)
 
     addValues(newPizza.totalPrice);
   })
