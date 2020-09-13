@@ -1,6 +1,6 @@
 # _Pizza Time!_
 
-#### _Pizza Pie, selector and cost calculator. September 7th 2020_
+#### _Pizza Pie, selector and cost calculator. September 12th 2020_
 
 #### By _**Garrett Brown**_
 
@@ -51,7 +51,7 @@ The Final Price is presented to the user.
 ---------------------SPECS---------------------
 
 Spec 1: When user does not select an option on all three menu boxes (Size, First Topping, Second Topping) no value is returned.
-Input:(Size: Small, First: --Select--, Second: Pineapple)
+Input:(Size: Small, First: " ", Second: Pineapple)
 Output:No price returned
 
 Spec 2: Hitting Reset button will clear drop down menus and clear price output.
@@ -74,7 +74,7 @@ Output: $10
 ---------------------TEST---------------------
 
 Test 1: When user does not select an option on one or all three menu boxes (Size, First Topping, Second Topping) no value is returned.
-Input:(Size: Small, First: --Select--, Second: Pineapple)
+Input:(Size: Small, First: " ", Second: Pineapple)
 Output:No price returned
 
 Test 2: Hitting Reset button will clear drop down menus and clear price output.

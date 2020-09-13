@@ -20,7 +20,9 @@ Pizza.prototype.returnPrice= function() {
 
 
 function addValues(newPizza) {
-  if (newPizza >= 7) {
+  if (newPizza === 0) {
+    $('#nothing').show()
+  }  else if (newPizza >= 7) {
     $('#twenty-dollars').show()
   } else if (newPizza >= 4) {
     $('#fifteen-dollars').show()
@@ -45,7 +47,6 @@ $(document).ready(function() {
         inputtedMeat = (strb.slice(0, -1)),
         numberVeggie = parseInt(strc.slice(-1)),
         inputtedVeggie = (strc.slice(0, -1));
-
 
 
     pizzaPrice(numberSize, numberMeat, numberVeggie);
