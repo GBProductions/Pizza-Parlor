@@ -10,8 +10,6 @@ function Pizza (size, meat, veggie, totalPrice) {
   this.totalPrice = totalPrice;
 };
 
-
-
 Pizza.prototype.returnPrice= function() {
   return "You ordered a " + this.size + " pizza with " + this.meat + " and " + this.veggie + ". "
 };
@@ -30,7 +28,6 @@ function addValues(newPizza) {
     $('#ten-dollars').show()
   }
 };
-
 
 $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
