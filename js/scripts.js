@@ -50,9 +50,7 @@ $(document).ready(function() {
 
     pizzaPrice(numberSize, numberMeat, numberVeggie);
     newPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie, totalPrice);
-
     addValues(newPizza.totalPrice);
-
     final = newPizza.returnPrice();
     $("#final").html(final);
   })
