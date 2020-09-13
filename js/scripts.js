@@ -51,8 +51,9 @@ $(document).ready(function() {
     pizzaPrice(numberSize, numberMeat, numberVeggie);
     newPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie, totalPrice);
 
-    console.log(newPizza)
-
     addValues(newPizza.totalPrice);
+
+    final = newPizza.returnPrice();
+    $("#final").html(final);
   })
 });
