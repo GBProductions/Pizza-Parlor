@@ -12,9 +12,9 @@ function Pizza (size, meat, veggie, totalPrice) {
 
 
 
-//Pizza.prototype.totalPrice1 = function() {
-  //totalPrice = (inputtedSize + inputtedMeat + inputtedVeggie)
-//};
+Pizza.prototype.returnPrice= function() {
+  return this.totalPrice
+};
 
 //User Interface Logic------------
 
@@ -34,13 +34,42 @@ $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
 
+    let stra = ($("#pizzaSize").val());
+    let strb= ($("#pizzaTopping1").val());
+    let strc = ($("#pizzaTopping2").val());
+
+    let str1 = (stra.slice(-1)),
+        str2 = (stra.slice(0, -1)),
+        str3 = (strb.slice(-1)),
+        str4 = (strb.slice(0, -1)),
+        str5 = (strc.slice(-1)),
+        str6 = (strc.slice(0, -1));
+
+      console.log(str1);
+      console.log(str2);
+      console.log(str3);
+      console.log(str4);
+      console.log(str5);
+      console.log(str6);
+
+
+    
+    
+    
+    
+    
+    
+
+
     
     let inputtedSize = parseInt($("#pizzaSize").val());
     let inputtedMeat = parseInt($("#pizzaTopping1").val());
     let inputtedVeggie = parseInt($("#pizzaTopping2").val());
-debugger
+
     totalPrice(inputtedSize, inputtedMeat, inputtedVeggie);
-    let newPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie, totalPrice);
+    newPizza = new Pizza (inputtedSize, inputtedMeat, inputtedVeggie, totalPrice);
+
+    returnPrice
 
     addValues(newPizza.totalPrice);
   })
