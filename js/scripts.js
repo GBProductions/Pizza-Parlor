@@ -1,6 +1,6 @@
 //Business Logic-----------
 function pizzaPrice(numberSize, numberMeat, numberVeggie) {
-  totalPrice = (numberSize, numberMeat, numberVeggie)
+  totalPrice = (numberSize + numberMeat + numberVeggie)
 }
 
 function Pizza (size, meat, veggie, totalPrice) {
@@ -13,7 +13,7 @@ function Pizza (size, meat, veggie, totalPrice) {
 
 
 Pizza.prototype.returnPrice= function() {
-  return this.totalPrice
+  return "You ordered a " + this.size + " pizza with " + this.meat + " and " + this.veggie + ". "
 };
 
 //User Interface Logic------------
@@ -33,6 +33,7 @@ function addValues(newPizza) {
 $(document).ready(function() {
   $("form#pizzaSelect").submit(function(event) {
     event.preventDefault();
+
 
     let stra = ($("#pizzaSize").val());
     let strb= ($("#pizzaTopping1").val());
